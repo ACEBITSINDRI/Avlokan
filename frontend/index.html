@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVLOKAN 2026 — Annual Technical Fest | ACE, B.I.T. Sindri</title>
+  <meta name="description"
+    content="AVLOKAN 2026 — Annual Technical Festival of ACE (Association of Civil Engineers), Department of Civil Engineering, B.I.T. Sindri, Dhanbad. 3-Day Techfest featuring Hackathon, Technical Events & Cultural Programmes.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="BIT-Sindri-logo-new-.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="BIT-Sindri-logo-new-.png" alt="BIT Sindri Logo" class="nav-bit-logo">
+        <img src="ace logo1.png" alt="ACE Logo" class="nav-ace-logo">
+        <div class="nav-logo-text">AVLOKAN<span>ACE • B.I.T. Sindri</span></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#hackathon">Hackathon</a></li>
+        <li><a href="#tracks">Problems</a></li>
+        <li><a href="#day2">Events</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#brochure" class="nav-cta">Downloads ↓</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Annual Technical Festival 2026</div>
+      <div class="hero-logos">
+        <img src="BIT-Sindri-logo-new-.png" alt="BIT Sindri Logo">
+        <img src="ace logo1.png" alt="ACE Logo" class="hero-ace-logo">
+      </div>
+      <h1 class="hero-title"><span class="gold">AVLOKAN</span></h1>
+      <div class="hero-year">— 2 0 2 6 —</div>
+      <p class="hero-subtitle">The Annual Technical Festival of <strong>Association of Civil Engineers
+          (ACE)</strong><br>Department of Civil Engineering, <strong>Birsa Institute of Technology,
+          Sindri</strong><br>Dhanbad, Jharkhand — Estd. 1949</p>
+      <div class="countdown" id="countdown">
+        <div class="countdown-item"><span class="countdown-value" id="cd-days">00</span><span
+            class="countdown-label">Days</span></div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item"><span class="countdown-value" id="cd-hours">00</span><span
+            class="countdown-label">Hours</span></div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item"><span class="countdown-value" id="cd-mins">00</span><span
+            class="countdown-label">Minutes</span></div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item"><span class="countdown-value" id="cd-secs">00</span><span
+            class="countdown-label">Seconds</span></div>
+      </div>
+      <div class="hero-cta">
+        <a href="#hackathon" class="btn btn-primary">Explore Hackathon →</a>
+        <a href="#brochure" class="btn btn-outline">Downloads</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke-width="2">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+      </svg></div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about blueprint-grid" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">About The Fest</div>
+        <h2 class="section-title">What is <span class="gold">AVLOKAN</span>?</h2>
+        <p class="section-desc">A platform where engineering students, faculty, and industry professionals collaborate,
+          compete, and innovate over three electrifying days.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>AVLOKAN is the annual technical festival of the <strong>Association of Civil Engineers (ACE)</strong>,
+            Department of Civil Engineering, <strong>Birsa Institute of Technology (B.I.T.) Sindri</strong>.</p>
+          <p>Conducted over three days, AVLOKAN brings together engineering students from across the country to apply
+            classroom theory to real-world problems — with emphasis on civil infrastructure, sustainable development,
+            and digital engineering.</p>
+          <p>The festival features a 12-hour inter-college Hackathon, Technical Paper Presentations, AutoCAD Drafting
+            Contests, Civil Engineering Quiz, Survey Treasure Hunt, and concludes with cultural performances and a grand
+            valedictory ceremony.</p>
+          <div class="about-stats">
+            <div class="stat-card"><span class="stat-value">3</span><span class="stat-label">Days</span></div>
+            <div class="stat-card"><span class="stat-value">44</span><span class="stat-label">Problem Statements</span>
+            </div>
+            <div class="stat-card"><span class="stat-value">5</span><span class="stat-label">Hackathon Tracks</span>
+            </div>
+            <div class="stat-card"><span class="stat-value">₹36K+</span><span class="stat-label">Prize Pool</span></div>
+          </div>
+        </div>
+        <div class="about-visual reveal reveal-delay-2">
+          <div class="about-card-stack">
+            <div class="info-card">
+              <div class="info-icon gold">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d4a843" stroke-width="1.5">
+                  <path d="M2 20h20M4 20V8l8-5 8 5v12M9 20v-6h6v6M9 10h6" />
+                </svg>
+              </div>
+              <div>
+                <h4>Civil Engineering Focus</h4>
+                <p>Real-world infrastructure and sustainable development challenges</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon blue">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 4l2 2-2 2M20 6h-4" />
+                </svg>
+              </div>
+              <div>
+                <h4>AI & Innovation</h4>
+                <p>Smart cities, IoT, robotics, and digital construction solutions</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon emerald">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2c3 3 4.5 6 4.5 10s-1.5 7-4.5 10c-3-3-4.5-6-4.5-10S9 5 12 2z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Inter-College</h4>
+                <p>Open to all undergraduate & postgraduate engineering students</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCHEDULE TIMELINE ========== -->
+  <section class="section schedule blueprint-grid" id="schedule">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Event Schedule</div>
+        <h2 class="section-title">Three Days of <span class="gold">Excellence</span></h2>
+        <p class="section-desc">From intense hackathon sprints to cultural celebrations — every day brings something
+          extraordinary.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="day-badge day1">Day I</span>
+            <h3>Hackathon — 12-Hour Sprint</h3>
+            <p>Inter-college teams choose a problem statement and develop a working prototype within 12 continuous
+              hours. Expert panel evaluates demonstrations at the end.</p>
+            <ul class="event-list">
+              <li>44 Problem Statements across 5 Tracks</li>
+              <li>Teams of 3–4 Members</li>
+              <li>9:00 AM – 9:00 PM Duration</li>
+              <li>Hardware / Software / Simulation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="day-badge day2">Day II</span>
+            <h3>Technical Events</h3>
+            <p>Individual and team-based technical competitions demonstrating domain knowledge, research acumen, and
+              presentation skills.</p>
+            <ul class="event-list">
+              <li>Technical Paper Presentation</li>
+              <li>AutoCAD Drafting Contest</li>
+              <li>Civil Engineering Quiz</li>
+              <li>Survey Treasure Hunt</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="day-badge day3">Day III</span>
+            <h3>Cultural & Valedictory</h3>
+            <p>Celebrating achievements with cultural performances, guest lectures, prize distribution, and the formal
+              valedictory ceremony.</p>
+            <ul class="event-list">
+              <li>Cultural Performances</li>
+              <li>Guest Lectures from Industry Leaders</li>
+              <li>Prize Distribution & Awards</li>
+              <li>Hackathon Project Exhibition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HACKATHON ========== -->
+  <section class="section hackathon" id="hackathon">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Day I — Main Event</div>
+        <h2 class="section-title">The <span class="gold">Hackathon</span></h2>
+        <p class="section-desc">12 hours. 44 challenges. 5 tracks. Build a working prototype that solves real-world
+          civil engineering problems.</p>
+      </div>
+
+      <div class="hack-overview reveal">
+        <div class="hack-stat">
+          <div class="hack-icon-wrap"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg></div><span class="value">12 Hrs</span><span class="label">Duration</span>
+        </div>
+        <div class="hack-stat">
+          <div class="hack-icon-wrap"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.5">
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <path d="M9 9h6M9 13h4" />
+            </svg></div><span class="value">44</span><span class="label">Problem Statements</span>
+        </div>
+        <div class="hack-stat">
+          <div class="hack-icon-wrap"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.5">
+              <circle cx="9" cy="7" r="4" />
+              <circle cx="17" cy="7" r="4" />
+              <path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2" />
+            </svg></div><span class="value">3–4</span><span class="label">Team Members</span>
+        </div>
+        <div class="hack-stat">
+          <div class="hack-icon-wrap"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.5">
+              <path d="M6 9l6-6 6 6M6 9h12v3a6 6 0 01-12 0V9z" />
+              <path d="M8 21h8M12 17v4" />
+            </svg></div><span class="value">₹36K+</span><span class="label">Total Prizes</span>
+        </div>
+      </div>
+
+      <!-- Schedule Table -->
+      <h3 class="section-title reveal" style="font-size:1.4rem;margin-bottom:24px;">Day I Schedule</h3>
+      <table class="schedule-table reveal">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08:00 – 09:00</td>
+            <td>Registration, ID Verification & Kit Distribution</td>
+          </tr>
+          <tr>
+            <td>09:00 – 09:30</td>
+            <td>Inauguration, Welcome Address & Track Briefing</td>
+          </tr>
+          <tr>
+            <td>09:30 – 10:00</td>
+            <td>Problem Statement Confirmation & Rules Briefing</td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td>HACKATHON BEGINS — 12-Hour Sprint</td>
+          </tr>
+          <tr>
+            <td>13:00 – 14:00</td>
+            <td>Lunch Break</td>
+          </tr>
+          <tr>
+            <td>16:00 – 16:30</td>
+            <td>Mid-Point Evaluation (Advisory Only)</td>
+          </tr>
+          <tr>
+            <td>19:00 – 19:30</td>
+            <td>Dinner Break</td>
+          </tr>
+          <tr>
+            <td>22:00 – 22:15</td>
+            <td>Final Submission — Hard Deadline</td>
+          </tr>
+          <tr>
+            <td>22:45 – 23:45</td>
+            <td>Final Demonstrations & Jury Evaluation</td>
+          </tr>
+          <tr>
+            <td>23:45 – 00:00</td>
+            <td>Results Announcement</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Prizes -->
+      <h3 class="section-title reveal" style="font-size:1.4rem;margin-bottom:8px;margin-top:48px;">Awards & Recognition
+      </h3>
+      <p class="section-desc reveal" style="margin-bottom:20px;text-align:left;">Outstanding performance is recognized
+        across multiple categories.</p>
+      <div class="prizes-grid reveal">
+        <div class="prize-card gold-prize">
+          <div class="prize-medal"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.2">
+              <circle cx="12" cy="14" r="7" />
+              <path d="M8.21 2.6L12 7l3.79-4.4M12 7v4" /><text x="12" y="17" text-anchor="middle" fill="#d4a843"
+                font-size="6" font-weight="bold" stroke="none">1</text>
+            </svg></div>
+          <div class="prize-title">Grand Innovator</div>
+          <div class="prize-subtitle">Winner — 1st Place</div>
+          <div class="prize-amount">₹15,000</div>
+          <ul class="prize-perks">
+            <li>Trophy + Certificate</li>
+            <li>Fast-track Industry Referral</li>
+          </ul>
+        </div>
+        <div class="prize-card silver-prize">
+          <div class="prize-medal"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#c0c0c0"
+              stroke-width="1.2">
+              <circle cx="12" cy="14" r="7" />
+              <path d="M8.21 2.6L12 7l3.79-4.4M12 7v4" /><text x="12" y="17" text-anchor="middle" fill="#c0c0c0"
+                font-size="6" font-weight="bold" stroke="none">2</text>
+            </svg></div>
+          <div class="prize-title">Excellence in Engineering</div>
+          <div class="prize-subtitle">First Runner-Up</div>
+          <div class="prize-amount">₹10,000</div>
+          <ul class="prize-perks">
+            <li>Trophy + Certificate</li>
+            <li>Mentorship Session</li>
+          </ul>
+        </div>
+        <div class="prize-card bronze-prize">
+          <div class="prize-medal"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#cd7f32"
+              stroke-width="1.2">
+              <circle cx="12" cy="14" r="7" />
+              <path d="M8.21 2.6L12 7l3.79-4.4M12 7v4" /><text x="12" y="17" text-anchor="middle" fill="#cd7f32"
+                font-size="6" font-weight="bold" stroke="none">3</text>
+            </svg></div>
+          <div class="prize-title">Distinguished Innovation</div>
+          <div class="prize-subtitle">Second Runner-Up</div>
+          <div class="prize-amount">₹5,000</div>
+          <ul class="prize-perks">
+            <li>Trophy + Certificate of Merit</li>
+          </ul>
+        </div>
+        <div class="prize-card special-prize">
+          <div class="prize-medal"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#10b981"
+              stroke-width="1.2">
+              <path d="M2 20h20M4 20V8l8-5 8 5v12M9 20v-6h6v6" />
+              <path d="M11 3l1-1 1 1" />
+            </svg></div>
+          <div class="prize-title">Civil Engineering Impact</div>
+          <div class="prize-subtitle">Best Civil Application</div>
+          <div class="prize-amount">₹3,000</div>
+          <ul class="prize-perks">
+            <li>Plaque + Special Jury Commendation</li>
+          </ul>
+        </div>
+        <div class="prize-card special-prize">
+          <div class="prize-medal"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#10b981"
+              stroke-width="1.2">
+              <path d="M12 22c4-2 8-6 8-12a8 8 0 00-16 0c0 6 4 10 8 12z" />
+              <path d="M12 8v8M8 12h8" />
+            </svg></div>
+          <div class="prize-title">Green Engineering</div>
+          <div class="prize-subtitle">Best Sustainability</div>
+          <div class="prize-amount">₹3,000</div>
+          <ul class="prize-perks">
+            <li>Plaque + Special Jury Commendation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROBLEM STATEMENTS (TRACKS) ========== -->
+  <section class="section tracks-section" id="tracks">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">44 Challenges</div>
+        <h2 class="section-title"><span class="gold">Problem Statements</span></h2>
+        <p class="section-desc">Select a track and explore the challenges. Each problem is designed to apply engineering
+          principles to real-world scenarios.</p>
+      </div>
+
+      <div class="track-tabs reveal" id="trackTabs">
+        <button class="track-tab active" data-track="trkA">TRK-A: Smart Infrastructure</button>
+        <button class="track-tab" data-track="trkB">TRK-B: Sustainable Energy</button>
+        <button class="track-tab" data-track="trkC">TRK-C: Digital Construction</button>
+        <button class="track-tab" data-track="trkD">TRK-D: Smart Cities</button>
+        <button class="track-tab" data-track="trkE">TRK-E: Open Innovation</button>
+      </div>
+
+      <div class="track-panel active" id="trkA">
+        <div class="track-header">
+          <h3>Smart Infrastructure & Transportation Engineering</h3>
+          <p>"Designing intelligent mobility and infrastructure solutions for tomorrow's cities"</p>
+          <div class="track-info">8 Problems · Hardware / Software / Simulation</div>
+        </div>
+        <div class="ps-list" id="psListA"></div>
+      </div>
+      <div class="track-panel" id="trkB">
+        <div class="track-header">
+          <h3>Sustainable Energy & Environmental Engineering</h3>
+          <p>"Engineering green solutions for a carbon-neutral future"</p>
+          <div class="track-info">8 Problems · Hardware / Software / Prototype</div>
+        </div>
+        <div class="ps-list" id="psListB"></div>
+      </div>
+      <div class="track-panel" id="trkC">
+        <div class="track-header">
+          <h3>Digital Construction & Structural Health Monitoring</h3>
+          <p>"Bringing AI-driven precision to construction sites and structural assessment"</p>
+          <div class="track-info">8 Problems · Hardware / Software / Simulation</div>
+        </div>
+        <div class="ps-list" id="psListC"></div>
+      </div>
+      <div class="track-panel" id="trkD">
+        <div class="track-header">
+          <h3>Smart Cities & Urban Systems</h3>
+          <p>"Building connected, data-driven urban ecosystems"</p>
+          <div class="track-info">10 Problems · Software / App / Platform</div>
+        </div>
+        <div class="ps-list" id="psListD"></div>
+      </div>
+      <div class="track-panel" id="trkE">
+        <div class="track-header">
+          <h3>Open Innovation</h3>
+          <p>"No boundaries — innovate across disciplines"</p>
+          <div class="track-info">10 Problems · Hardware / Software / Any</div>
+        </div>
+        <div class="ps-list" id="psListE"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DAY 2 EVENTS ========== -->
+  <section class="section day2-events" id="day2">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Day II — Technical Events</div>
+        <h2 class="section-title">Compete. Present. <span class="gold">Excel.</span></h2>
+        <p class="section-desc">Day 2 features individual and team competitions judged by faculty and industry experts.
+        </p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card reveal">
+          <div class="event-icon-wrap"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.5">
+              <rect x="4" y="2" width="16" height="20" rx="2" />
+              <path d="M8 6h8M8 10h8M8 14h5" />
+            </svg></div>
+          <h3>Technical Paper Presentation</h3>
+          <p>Present your research before a panel of faculty and industry judges. Demonstrate your domain knowledge and
+            presentation skills.</p>
+          <ul class="event-details">
+            <li><span class="label">Format</span> Individual / Team</li>
+            <li><span class="label">Focus</span> Civil Engineering Research</li>
+            <li><span class="label">Judging</span> Faculty & Industry Panel</li>
+          </ul>
+        </div>
+        <div class="event-card reveal reveal-delay-1">
+          <div class="event-icon-wrap"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+              stroke-width="1.5">
+              <path d="M3 3v18h18" />
+              <path d="M7 14l4-4 3 3 5-5" />
+              <circle cx="19" cy="8" r="1.5" />
+            </svg></div>
+          <h3>AutoCAD Drafting Contest</h3>
+          <p>Test your CAD skills in a timed drafting challenge. Precision, accuracy, and speed are paramount.</p>
+          <ul class="event-details">
+            <li><span class="label">Format</span> Individual</li>
+            <li><span class="label">Software</span> AutoCAD</li>
+            <li><span class="label">Skills</span> Precision Drafting</li>
+          </ul>
+        </div>
+        <div class="event-card reveal reveal-delay-2">
+          <div class="event-icon-wrap"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6"
+              stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3M9 2h6" />
+            </svg></div>
+          <h3>Civil Engineering Quiz</h3>
+          <p>Put your civil engineering knowledge to the test in rapid-fire rounds covering all major sub-disciplines.
+          </p>
+          <ul class="event-details">
+            <li><span class="label">Format</span> Team-based</li>
+            <li><span class="label">Rounds</span> Multiple</li>
+            <li><span class="label">Topics</span> All CE Domains</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SURVEY TREASURE HUNT ========== -->
+  <section class="section treasure-hunt" id="treasure">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Special Event</div>
+        <h2 class="section-title">Survey <span class="gold">Treasure Hunt</span></h2>
+        <p class="section-desc">A technical navigation event — surveying puzzles, field tasks, and intellectual decoding
+          across the campus.</p>
+      </div>
+      <div class="hunt-grid">
+        <div class="hunt-rules reveal">
+          <div class="rule-card">
+            <div class="rule-num">01</div>
+            <div>
+              <h4>Team Formation</h4>
+              <p>5 teams of up to 5 members each, randomly mixed from 1st & 2nd year students. Separate male/female
+                groups. Each team picks a unique one-word name.</p>
+            </div>
+          </div>
+          <div class="rule-card">
+            <div class="rule-num">02</div>
+            <div>
+              <h4>Device Policy</h4>
+              <p>Only team leader carries a mobile phone. Google Maps, ChatGPT, and passwords for decoding are
+                permitted. Live location sharing via WhatsApp is mandatory.</p>
+            </div>
+          </div>
+          <div class="rule-card">
+            <div class="rule-num">03</div>
+            <div>
+              <h4>Rules of Conduct</h4>
+              <p>No communication between teams. Full participation required. Losing materials = elimination.
+                Misbehaviour = immediate disqualification.</p>
+            </div>
+          </div>
+          <div class="rule-card">
+            <div class="rule-num">04</div>
+            <div>
+              <h4>Boundaries</h4>
+              <p>Commences at the Gate of Civil Engineering Department and concludes at the Department Garden.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hunt-challenges reveal reveal-delay-2">
+          <h3>Challenge Progression</h3>
+          <ul class="challenge-list">
+            <li><span class="ch-num">1</span> Draw "Cheat Sheet 1" to determine first direction + receive secret Bonus
+              Card for the final level</li>
+            <li><span class="ch-num">2</span> Pass oral MCQ tests and technical dictation in Civil Engineering at
+              checkpoints</li>
+            <li><span class="ch-num">3</span> Solve coordinate-based puzzles (Latitude & Longitude) to find next
+              locations</li>
+            <li><span class="ch-num">4</span> Perform verbal password exchanges with officials to verify identity</li>
+            <li><span class="ch-num">5</span> Complete field work: top-view sketches, collecting environmental materials
+            </li>
+            <li><span class="ch-num">6</span> Decode ASCII texts to unlock a password-protected PDF and find the
+              treasure</li>
+            <li><span class="ch-num">7</span> Final Validation: Present all items (nail marks, journal thread, gitti,
+              chalk) + password exchange</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ORGANISING TEAM ========== -->
+  <section class="section team-section blueprint-grid" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">The People Behind</div>
+        <h2 class="section-title">Organising <span class="gold">Committee</span></h2>
+        <p class="section-desc">The dedicated team from ACE, Department of Civil Engineering, B.I.T. Sindri that makes
+          AVLOKAN possible.</p>
+      </div>
+
+      <!-- Faculty -->
+      <h3 class="subsection-title reveal">Faculty Advisors</h3>
+      <div class="team-grid faculty-grid reveal">
+        <div class="team-card faculty-card">
+          <div class="team-avatar"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.2">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M3 21v-2a7 7 0 0114 0v2" />
+            </svg></div>
+          <h4>Head of Department</h4>
+          <p class="team-role">Chief Patron</p>
+          <p class="team-dept">Dept. of Civil Engineering</p>
+        </div>
+        <div class="team-card faculty-card">
+          <div class="team-avatar"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.2">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M3 21v-2a7 7 0 0114 0v2" />
+            </svg></div>
+          <h4>Faculty Coordinator</h4>
+          <p class="team-role">Event Advisor</p>
+          <p class="team-dept">Dept. of Civil Engineering</p>
+        </div>
+      </div>
+
+      <!-- Student Core -->
+      <h3 class="subsection-title reveal">Student Core Team — ACE</h3>
+      <div class="team-grid reveal">
+        <div class="team-card">
+          <div class="team-avatar student"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+              stroke-width="1.5">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M5 20v-1a7 7 0 0114 0v1" />
+            </svg></div>
+          <h4>President, ACE</h4>
+          <p class="team-role">Overall Coordinator</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar student"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+              stroke-width="1.5">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M5 20v-1a7 7 0 0114 0v1" />
+            </svg></div>
+          <h4>Vice President, ACE</h4>
+          <p class="team-role">Event Management</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar student"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+              stroke-width="1.5">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M5 20v-1a7 7 0 0114 0v1" />
+            </svg></div>
+          <h4>General Secretary</h4>
+          <p class="team-role">Operations & Logistics</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar student"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+              stroke-width="1.5">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M5 20v-1a7 7 0 0114 0v1" />
+            </svg></div>
+          <h4>Technical Head</h4>
+          <p class="team-role">Hackathon Lead</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar student"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+              stroke-width="1.5">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M5 20v-1a7 7 0 0114 0v1" />
+            </svg></div>
+          <h4>Treasurer</h4>
+          <p class="team-role">Finance & Sponsorship</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar student"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+              stroke-width="1.5">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M5 20v-1a7 7 0 0114 0v1" />
+            </svg></div>
+          <h4>PR & Media Head</h4>
+          <p class="team-role">Communications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPEAKERS ========== -->
+  <section class="section speakers-section blueprint-grid" id="speakers">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Guest Speakers</div>
+        <h2 class="section-title">Industry <span class="gold">Mentors</span></h2>
+        <p class="section-desc">Expert panel from industry and academia guiding participants and judging the hackathon.
+        </p>
+      </div>
+      <div class="speakers-grid reveal">
+        <div class="speaker-card">
+          <div class="speaker-avatar"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M3 21v-2a7 7 0 0114 0v2" />
+              <path d="M17 3l2 2-2 2" stroke-width="1.5" />
+            </svg></div>
+          <h4>Industry Expert</h4>
+          <p class="speaker-desc">Guest Lecture & Jury Panel Member — Day I Hackathon Evaluation</p>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-avatar"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M3 21v-2a7 7 0 0114 0v2" />
+              <rect x="16" y="3" width="6" height="4" rx="1" stroke-width="1.5" />
+            </svg></div>
+          <h4>Academic Mentor</h4>
+          <p class="speaker-desc">Faculty mentors from Dept. of Civil Engineering available at scheduled intervals</p>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-avatar"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M3 21v-2a7 7 0 0114 0v2" />
+              <path d="M17 7l3-3M20 7l-3-3" stroke-width="1.5" />
+            </svg></div>
+          <h4>Chief Guest</h4>
+          <p class="speaker-desc">Valedictory Address & Guest Lecture — Day III Cultural & Closing Ceremony</p>
+        </div>
+      </div>
+      <p class="speakers-note reveal">Speaker names and profiles will be announced soon. Stay tuned!</p>
+    </div>
+  </section>
+
+  <!-- ========== SPONSORS ========== -->
+  <section class="section sponsors-section" id="sponsors">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Partners</div>
+        <h2 class="section-title">Sponsors & <span class="gold">Partners</span></h2>
+        <p class="section-desc">AVLOKAN 2026 is made possible through the generous support of our sponsors and
+          institutional partners.</p>
+      </div>
+      <div class="sponsor-tiers reveal">
+        <div class="sponsor-tier">
+          <h4 class="tier-label gold-tier">Title Sponsor</h4>
+          <div class="sponsor-slots">
+            <div class="sponsor-placeholder">To be announced</div>
+          </div>
+        </div>
+        <div class="sponsor-tier">
+          <h4 class="tier-label silver-tier">Associate Sponsors</h4>
+          <div class="sponsor-slots">
+            <div class="sponsor-placeholder">To be announced</div>
+            <div class="sponsor-placeholder">To be announced</div>
+          </div>
+        </div>
+        <div class="sponsor-tier">
+          <h4 class="tier-label">Institutional Partners</h4>
+          <div class="sponsor-slots">
+            <div class="sponsor-card-inst">
+              <img src="BIT-Sindri-logo-new-.png" alt="BIT Sindri" class="sponsor-logo">
+              <span>B.I.T. Sindri</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="sponsor-cta reveal">Interested in sponsoring AVLOKAN 2026? Write to <a
+          href="mailto:ace.bitsindri@gmail.com">ace.bitsindri@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- ========== DOWNLOADS ========== -->
+  <section class="section brochure" id="brochure">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Resources</div>
+        <h2 class="section-title">Official <span class="gold">Downloads</span></h2>
+      </div>
+      <div class="downloads-grid reveal">
+        <div class="brochure-card">
+          <div class="download-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d4a843"
+              stroke-width="1.2">
+              <rect x="4" y="2" width="16" height="20" rx="2" />
+              <path d="M8 6h8M8 10h8M8 14h5M12 18v-4M9 17l3 3 3-3" />
+            </svg></div>
+          <h3>AVLOKAN'26 Brochure</h3>
+          <p>Complete event brochure with schedules, maps, and event details.</p>
+          <a href="AVLOKAN'26 Broucher.pdf" download class="btn btn-primary">Download Brochure (PDF)</a>
+        </div>
+        <div class="brochure-card">
+          <div class="download-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+              stroke-width="1.2">
+              <rect x="4" y="2" width="16" height="20" rx="2" />
+              <path d="M9 7h6M9 11h6M9 15h3M12 18v-4M9 17l3 3 3-3" />
+            </svg></div>
+          <h3>Hackathon Problem Statements</h3>
+          <p>Official Problem Statement Booklet with all 44 challenges, rules, regulations, and judging criteria.</p>
+          <a href="AVLOKAN_2026_Hackathon_PSB.docx" download class="btn btn-outline">Download PSB (DOCX)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>AVLOKAN 2026</h3>
+          <p>Annual Technical Festival of ACE — Association of Civil Engineers, Department of Civil Engineering, B.I.T.
+            Sindri, Dhanbad, Jharkhand. Established 1949.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#hackathon">Hackathon</a></li>
+            <li><a href="#tracks">Problem Statements</a></li>
+            <li><a href="#team">Organising Team</a></li>
+            <li><a href="#brochure">Downloads</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links footer-contact">
+            <li><span class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M22 4L12 13 2 4" />
+                </svg></span> ace.bitsindri@gmail.com</li>
+            <li><span class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M2 20h20M4 20V8l8-5 8 5v12" />
+                </svg></span> Dept. of Civil Engineering</li>
+            <li><span class="contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg></span> B.I.T. Sindri — 828123, Dhanbad</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Association of Civil Engineers, B.I.T. Sindri. All Rights Reserved.</p>
+        <div class="college-info">Birsa Institute of Technology, Sindri — Estd. 1949</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+# Intermediate extraction files
+frontend/hackathon_psb_content.txt
+frontend/survey_content.txt
+
+# OS files
+.DS_Store
+Thumbs.db
