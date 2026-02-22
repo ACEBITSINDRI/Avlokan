@@ -1,7 +1,15 @@
 # Intermediate extraction files
 frontend/hackathon_psb_content.txt
 frontend/survey_content.txt
+frontend/data/
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# Backend
+backend/node_modules/
+backend/.env
+
+# Old files (kept originals in new structure)
+frontend/Asset/
