@@ -1683,12 +1683,31 @@ img {
     /* Mobile Nav */
     .nav-toggle {
         display: flex;
-        z-index: 1002;
+        z-index: 10000;
+    }
+
+    .nav-logo-text {
+        font-size: 0.68rem;
+        max-width: 120px;
+        white-space: normal;
+        line-height: 1.25;
+    }
+
+    .nav-logo-text span {
+        font-size: 0.55rem;
+        letter-spacing: 0.8px;
+        display: block;
+        margin-top: 1px;
     }
 
     .nav-links {
         position: fixed;
-        inset: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
         background: rgba(6, 10, 20, 0.97);
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
@@ -1696,13 +1715,12 @@ img {
         gap: 0;
         justify-content: center;
         align-items: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.4s ease, visibility 0.4s ease;
-        z-index: 1001;
+        display: none;
+        z-index: 9999;
     }
 
     .nav-links.active {
+        display: flex;
         opacity: 1;
         visibility: visible;
     }

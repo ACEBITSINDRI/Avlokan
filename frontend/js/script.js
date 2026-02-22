@@ -6,8 +6,8 @@
 // ─── Configuration ─────────────────────────────────────
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? 'http://localhost:3000/api'
-    : 'https://avlokan-backend.onrender.com/api'; // Replace with your actual Render URL after deployment
-const EVENT_DATE = new Date('2026-03-15T09:00:00+05:30');
+    : 'https://avlokan-backend.onrender.com/api';
+const EVENT_DATE = new Date('2026-04-05T09:00:00+05:30');
 
 // ─── Hero Typing Effect ───────────────────────────────
 (function heroTyping() {
