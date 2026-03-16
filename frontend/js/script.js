@@ -93,10 +93,13 @@ const PROBLEMS = {
 
 // ─── Countdown Timer ──────────────────────────────────
 function updateCountdown() {
+    const daysEl = document.getElementById('cd-days');
+    if (!daysEl) return;
+
     const now = new Date();
     const diff = EVENT_DATE - now;
     if (diff <= 0) {
-        document.getElementById('cd-days').textContent = '00';
+        daysEl.textContent = '00';
         document.getElementById('cd-hours').textContent = '00';
         document.getElementById('cd-mins').textContent = '00';
         document.getElementById('cd-secs').textContent = '00';
@@ -106,7 +109,7 @@ function updateCountdown() {
     const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const s = Math.floor((diff % (1000 * 60)) / 1000);
-    document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
+    daysEl.textContent = String(d).padStart(2, '0');
     document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
     document.getElementById('cd-mins').textContent = String(m).padStart(2, '0');
     document.getElementById('cd-secs').textContent = String(s).padStart(2, '0');

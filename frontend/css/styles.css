@@ -316,7 +316,8 @@ img {
     background: linear-gradient(135deg, var(--gold), #c4942f) !important;
     color: #0a0e1a !important;
     font-weight: 700 !important;
-    padding: 10px 20px !important;
+    font-size: 0.8rem !important;
+    padding: 8px 15px !important;
     border-radius: var(--radius) !important;
 }
 
@@ -1122,8 +1123,168 @@ img {
 }
 
 /* ═══════════════════════════════════════
-   PREVIOUS EVENTS / LEGACY
+   PREVIOUS EVENTS / GALLERY
    ═══════════════════════════════════════ */
+.gallery-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* AVLOKAN '24 Hero */
+.legacy-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: var(--bg-glass);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.legacy-year-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(212, 168, 67, 0.1);
+    color: var(--gold);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(212, 168, 67, 0.3);
+}
+
+.legacy-hero h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.legacy-hero-desc {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.legacy-hero-key {
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--gold);
+    font-size: 0.85rem;
+    color: var(--text);
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.legacy-hero-key strong {
+    color: var(--gold);
+}
+
+.legacy-hero-image {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+}
+
+.legacy-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.legacy-hero-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Bento Grid (8 Sub Events) */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 180px;
+    gap: 20px;
+}
+
+.bento-item {
+    background: var(--bg-glass);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.bento-item h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    z-index: 2;
+}
+
+.bento-item p {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    z-index: 2;
+}
+
+.bento-wide {
+    grid-column: span 2;
+}
+
+.bento-tall {
+    grid-row: span 2;
+}
+
+.bento-item.bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.bento-item.bg-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(6, 10, 20, 0.95) 0%, rgba(6, 10, 20, 0.4) 100%);
+    z-index: 1;
+    transition: background 0.4s ease;
+}
+
+.bento-item.bg-image:hover::before {
+    background: linear-gradient(to top, rgba(6, 10, 20, 0.9) 0%, rgba(6, 10, 20, 0.2) 100%);
+}
+
+.bento-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    z-index: 2;
+}
+
+.bento-item:hover {
+    border-color: rgba(212, 168, 67, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bento-item.bg-image:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* Other Milestones (Timeline) */
 .legacy-timeline {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1177,23 +1338,33 @@ img {
 .legacy-card p {
     font-size: 0.85rem;
     color: var(--text-dim);
-    margin-bottom: 16px;
     line-height: 1.6;
 }
 
-.legacy-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+/* Masonry Gallery */
+.masonry-gallery {
+    column-count: 4;
+    column-gap: 20px;
 }
 
-.legacy-highlights span {
-    padding: 3px 10px;
-    font-size: 0.68rem;
-    font-family: var(--font-mono);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    color: var(--text-dim);
+.masonry-gallery img {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    break-inside: avoid;
+    filter: grayscale(80%);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.masonry-gallery img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    border-color: var(--gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 10;
+    position: relative;
 }
 
 /* ═══════════════════════════════════════
@@ -1252,6 +1423,77 @@ img {
 /* ═══════════════════════════════════════
    SPONSORS
    ═══════════════════════════════════════ */
+/* Past Sponsors Marquee */
+.sponsors-marquee-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+    position: relative;
+    background: rgba(6, 10, 20, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 60px;
+}
+
+.sponsors-marquee-container::before,
+.sponsors-marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.sponsors-marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(6, 10, 20, 1) 0%, transparent 100%);
+}
+
+.sponsors-marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(6, 10, 20, 1) 0%, transparent 100%);
+}
+
+.sponsors-marquee {
+    display: flex;
+    align-items: center;
+    width: calc(300px * 14); /* Width of all 14 duplicated logos */
+    animation: scroll-marquee 40s linear infinite;
+}
+
+.sponsors-marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-300px * 7)); } /* Shift by exactly half the container width to seamlessly loop */
+}
+
+.sponsor-logo-wrap {
+    width: 300px; /* Fixed width to ensure smooth loop math */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.sponsor-logo-wrap img {
+    max-height: 80px;
+    max-width: 200px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.6) brightness(1.5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.sponsor-logo-wrap:hover img {
+    filter: grayscale(0%) opacity(1) brightness(1);
+    transform: scale(1.05);
+}
+
 .sponsor-tiers {
     text-align: center;
 }
@@ -1657,6 +1899,24 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .legacy-hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bento-wide {
+        grid-column: span 1;
+    }
+
+    .masonry-gallery {
+        column-count: 3;
+    }
+
     .sponsor-benefits {
         grid-template-columns: 1fr;
     }
@@ -1678,6 +1938,34 @@ img {
 
     .container {
         padding: 0 16px;
+    }
+
+    .legacy-hero {
+        padding: 24px;
+        gap: 20px;
+    }
+
+    .legacy-hero h3 {
+        font-size: 1.8rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 150px;
+    }
+
+    .bento-tall, .bento-wide {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .masonry-gallery {
+        column-count: 2;
+        column-gap: 12px;
+    }
+
+    .masonry-gallery img {
+        margin-bottom: 12px;
     }
 
     /* Mobile Nav */
@@ -1708,21 +1996,23 @@ img {
         bottom: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(6, 10, 20, 0.97);
+        height: 100dvh;
+        background: rgba(6, 10, 20, 0.98);
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
         flex-direction: column;
-        gap: 0;
+        gap: 6px;
         justify-content: center;
         align-items: center;
         display: none;
         z-index: 9999;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
     }
 
     .nav-links.active {
         display: flex;
-        opacity: 1;
-        visibility: visible;
     }
 
     .nav-links li {
