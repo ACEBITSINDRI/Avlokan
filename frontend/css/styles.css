@@ -2150,16 +2150,40 @@ img {
 
 .footer-contact li {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.82rem;
-    color: var(--text-dim);
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .contact-icon {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
+    color: var(--gold);
+    width: 20px;
+    margin-top: 4px;
+}
+
+.contact-info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+.contact-value {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.4;
+    word-break: break-word;
 }
 
 .footer-bottom {
@@ -2615,31 +2639,49 @@ img {
 
     /* Footer */
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px 24px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
     }
 
     .footer-brand {
         grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo-row {
+        justify-content: center;
     }
 
     .footer-brand p {
-        font-size: 0.7rem;
-        line-height: 1.4;
+        font-size: 0.8rem;
+        margin: 0 auto;
     }
 
     .footer-col-contact {
-        grid-column: 2;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact li {
+        justify-content: center;
+        text-align: center;
+        font-size: 0.85rem;
+        width: 100%;
     }
 
     .footer-col-links {
-        grid-column: 1 / -1;
+        grid-column: 1;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-        margin-top: 20px;
+        gap: 12px;
+        margin-top: 10px;
         border-top: 1px solid rgba(255,255,255,0.05);
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     .footer-col-links h4 {
@@ -2648,7 +2690,7 @@ img {
 
     .footer-bottom {
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
         text-align: center;
     }
 }
