@@ -903,6 +903,276 @@ img {
 }
 
 /* ═══════════════════════════════════════
+   HACKATHON ROADMAP TIMELINE
+   ═══════════════════════════════════════ */
+.hack-timeline-container {
+    padding: 0 20px;
+}
+
+.hack-roadmap {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.roadmap-track {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: linear-gradient(180deg, var(--gold), rgba(212, 168, 67, 0.15), var(--gold));
+    transform: translateX(-50%);
+}
+
+.roadmap-step {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.roadmap-step:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.roadmap-node {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--bg-deep);
+    border: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    box-shadow: 0 0 20px rgba(212, 168, 67, 0.25);
+    transition: var(--transition);
+}
+
+.roadmap-node span {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.roadmap-step:hover .roadmap-node {
+    background: var(--gold);
+    transform: translateX(-50%) scale(1.15);
+    box-shadow: 0 0 30px rgba(212, 168, 67, 0.5);
+}
+
+.roadmap-step:hover .roadmap-node span {
+    color: var(--bg-deep);
+}
+
+.roadmap-card {
+    width: calc(50% - 48px);
+    padding: 24px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(12px);
+    transition: var(--transition);
+    position: relative;
+}
+
+.roadmap-step:nth-child(odd) .roadmap-card {
+    margin-right: auto;
+}
+
+.roadmap-step:nth-child(even) .roadmap-card {
+    margin-left: auto;
+}
+
+.roadmap-step:hover .roadmap-card {
+    border-color: var(--gold);
+    box-shadow: var(--shadow-gold);
+    transform: translateY(-4px);
+}
+
+.roadmap-break {
+    text-align: center;
+    padding: 12px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.roadmap-break span {
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 0.78rem;
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    background: var(--bg-card);
+    border: 1px dashed rgba(212, 168, 67, 0.25);
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.roadmap-time {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.roadmap-card h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text);
+}
+
+.roadmap-card p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+/* Finale Step - Special Golden Glow */
+.finale-node {
+    border-color: var(--gold-light) !important;
+    background: rgba(212, 168, 67, 0.15) !important;
+    box-shadow: 0 0 30px rgba(212, 168, 67, 0.5) !important;
+}
+
+.finale-card {
+    background: linear-gradient(135deg, rgba(212, 168, 67, 0.1), rgba(12, 20, 40, 0.65)) !important;
+    border-color: rgba(212, 168, 67, 0.4) !important;
+}
+
+.finale-card .roadmap-time {
+    color: var(--gold-light);
+    text-shadow: 0 0 8px rgba(232, 201, 122, 0.4);
+}
+
+@media (max-width: 768px) {
+    .roadmap-track {
+        left: 20px;
+    }
+    .roadmap-node {
+        left: 20px;
+        width: 36px;
+        height: 36px;
+    }
+    .roadmap-step:hover .roadmap-node {
+        transform: translateX(-50%) scale(1.1);
+    }
+    .roadmap-step,
+    .roadmap-step:nth-child(even) {
+        flex-direction: row;
+        padding-left: 56px;
+    }
+    .roadmap-card,
+    .roadmap-step:nth-child(odd) .roadmap-card,
+    .roadmap-step:nth-child(even) .roadmap-card {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* ═══════════════════════════════════════
+   OFFICIAL DOWNLOAD CENTRE
+   ═══════════════════════════════════════ */
+.downloads-section {
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(212, 168, 67, 0.04) 0%, transparent 60%),
+        var(--bg-deep);
+}
+
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.download-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.download-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-gold);
+}
+
+.dl-icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius);
+    background: rgba(212, 168, 67, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dl-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.dl-info h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.dl-info p {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.dl-badge {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dl-arrow {
+    flex-shrink: 0;
+    color: var(--text-dim);
+    transition: var(--transition);
+}
+
+.download-card:hover .dl-arrow {
+    color: var(--gold);
+    transform: translateY(3px);
+}
+
+@media (max-width: 768px) {
+    .downloads-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ═══════════════════════════════════════
    DAY 2 EVENTS
    ═══════════════════════════════════════ */
 .events-grid {
@@ -963,6 +1233,50 @@ img {
     border: 1px solid var(--border);
     border-radius: 16px;
     color: var(--text-dim);
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 8px 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--gold);
+    background: rgba(212, 168, 67, 0.08);
+    border: 1px solid rgba(212, 168, 67, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    background: rgba(212, 168, 67, 0.18);
+    border-color: var(--gold);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212, 168, 67, 0.25);
+}
+
+.ppt-highlight {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.4);
+    color: #60a5fa;
+    animation: pptPulse 2.5s ease-in-out infinite;
+}
+
+.ppt-highlight:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: #60a5fa;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.35);
+}
+
+@keyframes pptPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+    50% { box-shadow: 0 0 12px 4px rgba(59, 130, 246, 0.2); }
 }
 
 /* ═══════════════════════════════════════
