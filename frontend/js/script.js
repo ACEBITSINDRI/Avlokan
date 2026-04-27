@@ -133,12 +133,32 @@ navToggle.addEventListener('click', () => {
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
 });
 
-// Close menu on link click
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-        document.body.style.overflow = '';
+// ─── Smooth Scrolling (Hashless) & Close Menu ─────────
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            e.preventDefault(); // Prevents the # hash from appearing in URL
+            
+            // Scroll smoothly to the target, accounting for navbar height
+            const navbarHeight = navbar ? navbar.offsetHeight : 72;
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+
+            // If it's a mobile menu link, close the menu
+            if (navToggle && navLinks && navLinks.contains(this)) {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
     });
 });
 
