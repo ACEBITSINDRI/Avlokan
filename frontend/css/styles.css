@@ -2136,10 +2136,29 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
+    padding: 24px 0;
     border-top: 1px solid var(--border);
     font-size: 0.78rem;
     color: var(--text-dim);
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-credits {
+    font-size: 0.6rem;
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.footer-credits a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-credits a:hover {
+    text-decoration: underline;
+    opacity: 1;
 }
 
 .college-info {
@@ -2566,26 +2585,34 @@ img {
     /* Footer */
     .footer-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 24px;
+        gap: 32px 24px;
     }
 
     .footer-brand {
-        grid-column: 1 / -1;
+        grid-column: 1;
     }
 
     .footer-brand p {
-        font-size: 0.72rem;
-        line-height: 1.5;
-    }
-
-    .footer-col-links {
-        grid-column: 1;
-        grid-row: 2;
+        font-size: 0.7rem;
+        line-height: 1.4;
     }
 
     .footer-col-contact {
         grid-column: 2;
-        grid-row: 2;
+    }
+
+    .footer-col-links {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 20px;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        padding-top: 20px;
+    }
+
+    .footer-col-links h4 {
+        grid-column: 1 / -1;
     }
 
     .footer-bottom {
