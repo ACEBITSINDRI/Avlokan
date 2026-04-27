@@ -2062,27 +2062,46 @@ img {
    FOOTER
    ═══════════════════════════════════════ */
 .footer {
-    padding: 60px 0 30px;
+    padding: 80px 0 40px;
     border-top: 1px solid var(--border);
-    background: rgba(6, 10, 20, 0.8);
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(212, 168, 67, 0.03) 0%, transparent 40%),
+        linear-gradient(rgba(6, 10, 20, 0.96), rgba(6, 10, 20, 0.96)),
+        url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h30v1H0z' fill='%23ffffff' fill-opacity='0.04'/%3E%3Cpath d='M0 0v30h1V0z' fill='%23ffffff' fill-opacity='0.04'/%3E%3C/svg%3E");
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.3;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
+    grid-template-columns: 1.2fr 1fr 1.5fr;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 .footer-brand h3 {
-    font-size: 1.3rem;
-    font-weight: 800;
-    margin-bottom: 12px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    color: #fff;
 }
 
 .footer-brand p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--text-dim);
+    max-width: 280px;
 }
 
 .footer-logo-row {
@@ -2100,18 +2119,29 @@ img {
 }
 
 .footer h4 {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 24px;
 }
 
 .footer-links li {
-    margin-bottom: 8px;
+    margin: 0;
 }
 
 .footer-links li a {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: var(--text-dim);
+    transition: var(--transition);
+    display: inline-block;
 }
 
 .footer-links li a:hover {
@@ -2136,18 +2166,19 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
-    border-top: 1px solid var(--border);
-    font-size: 0.78rem;
-    color: var(--text-dim);
-    gap: 16px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .footer-credits {
     font-size: 0.6rem;
-    opacity: 0.6;
+    opacity: 0.5;
     transition: var(--transition);
+    letter-spacing: 0.5px;
 }
 
 .footer-credits a {
